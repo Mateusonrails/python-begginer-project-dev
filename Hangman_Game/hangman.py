@@ -11,6 +11,8 @@ def hangman():
         missed = 0
         for letter in word:
             if letter in guessmade:
+                main += letter
+            else:
                 main += "_" + " "
         if main == word:
             print(main)
